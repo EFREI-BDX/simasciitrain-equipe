@@ -12,8 +12,12 @@ namespace simasciitrain {
 
 class TrainElement {
     virtual ~TrainElement() = 0;
-    virtual char getSymbol() = 0;
-    virtual string getType() = 0;
+    [[nodiscard]] virtual char getSymbol() const = 0;
+    [[nodiscard]] virtual string getType() const = 0;
+    friend ostream &operator<<(ostream &os, TrainElement &element) {
+        element.print(os);
+        return os;
+    }
 protected:
     virtual void print(ostream &os) = 0;
 };
