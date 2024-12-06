@@ -6,7 +6,7 @@
 #define WAGON_H
 
 #include <iostream>
-
+#include <vector>
 #include "AbstractWagon.h"
 
 namespace simasciitrain {
