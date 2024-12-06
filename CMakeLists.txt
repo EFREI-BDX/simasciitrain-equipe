@@ -28,4 +28,5 @@ add_executable(simasciitrain main.cpp
         ITrain.h
         Train.h
         Train.cpp
+        Train.h
 )
