@@ -15,4 +15,17 @@ add_executable(simasciitrain main.cpp
         GasolineLocomotive.h
         GasolineLocomotive.cpp
         AbstractLocomotive.cpp
+        AbstractWagon.cpp
+        AbstractWagon.h
+        TypeWagon.cpp
+        TypeWagon.h
+        UtilityWagon.cpp
+        UtilityWagon.h
+        TrainElement.h
+        PassengerWagon.cpp
+        PassengerWagon.h
+        FreightWagon.cpp
+        FreightWagon.h
+        Wagons.cpp
+        Wagons.h
 )

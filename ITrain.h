@@ -7,8 +7,8 @@
 
 namespace simasciitrain {
     class ITrain {
-    public :
-        virtual ~ITrain() = 0;
+        public :
+            virtual ~ITrain() = 0;
 
         friend ostream &operator<<(ostream &os, ITrain &element) {
             element.print(os);
@@ -16,7 +16,7 @@ namespace simasciitrain {
         }
 
     protected:
-        virtual void print(ostream os&) = 0;
+        virtual void print(ostream &os) = 0;
     };
 }
 

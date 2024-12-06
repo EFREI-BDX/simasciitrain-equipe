@@ -11,7 +11,7 @@
 namespace simasciitrain {
     class TypeLocomotive {
         std::string name;
-        char symbol{};
+        char symbol;
 
     public:
         TypeLocomotive(std::string name, char symbol);

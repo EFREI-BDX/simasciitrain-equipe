@@ -5,8 +5,8 @@
 #include "AbstractLocomotive.h"
 namespace simasciitrain {
 
-    Train::Train(AbstractLocomotive* locomotive)
-        : locomotive(locomotive) {
+    Train::Train(Wagons * wagons, AbstractLocomotive* locomotive)
+        : locomotive(locomotive), wagons(wagons) {
     }
 
     Train::~Train() {
@@ -15,7 +15,7 @@ namespace simasciitrain {
     }
 
     void Train::print(ostream &os) {
-        os << this->locomotive;
+        os << wagons << this->locomotive;
     }
 
 
