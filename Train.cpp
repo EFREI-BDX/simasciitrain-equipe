@@ -9,13 +9,8 @@ namespace simasciitrain {
         : locomotive(locomotive), wagons(wagons) {
     }
 
-    Train::~Train() {
-        delete locomotive;
-        locomotive = nullptr;
-    }
-
     void Train::print(ostream &os) {
-        os << wagons << this->locomotive;
+        os << *wagons << "-" << *locomotive;
     }
 
 

@@ -11,7 +11,8 @@ using namespace std;
 namespace simasciitrain {
 
 class TrainElement {
-    virtual ~TrainElement() = 0;
+public:
+    virtual ~TrainElement() = default;
     [[nodiscard]] virtual char getSymbol() const = 0;
     [[nodiscard]] virtual string getType() const = 0;
     friend ostream &operator<<(ostream &os, TrainElement &element) {

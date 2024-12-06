@@ -17,7 +17,7 @@ namespace simasciitrain {
     public:
         explicit AbstractWagon(TypeWagon * type);
 
-        ~AbstractWagon() override;
+        ~AbstractWagon() override = default;
         [[nodiscard]] string getName() const;
         [[nodiscard]] char getSymbol() const override;
         [[nodiscard]] string getType() const override;

@@ -6,8 +6,6 @@
 #define TYPELOCOMOTIVE_H
 #include <iostream>
 
-#include "AbstractLocomotive.h"
-
 namespace simasciitrain {
     class TypeLocomotive {
         std::string name;

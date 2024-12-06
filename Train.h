@@ -10,7 +10,7 @@ namespace simasciitrain {
     AbstractLocomotive* locomotive;
     Wagons* wagons;
     public:
-        ~Train() override;
+        ~Train() override = default;
         Train(Wagons * wagons, AbstractLocomotive* locomotive);
     protected:
         void print(ostream &os) override;

@@ -11,11 +11,10 @@ using namespace simasciitrain;
 
 namespace simasciitrain {
     class AbstractLocomotive : public TrainElement  {
-    private:
         TypeLocomotive* type_locomotive;
     public:
         AbstractLocomotive(TypeLocomotive* type_locomotive);
-        ~AbstractLocomotive() override;
+        ~AbstractLocomotive() override = default;
         [[nodiscard]] char getSymbol() const override;
         [[nodiscard]] std::string getType() const override;
     protected:

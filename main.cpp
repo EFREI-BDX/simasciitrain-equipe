@@ -13,7 +13,7 @@ using namespace simasciitrain;
 
 int main() {
 	AbstractWagon *freightWagon = new FreightWagon(5);
-	/*
+
 	std::cout << *freightWagon << std::endl;            //	[#####]
 	AbstractWagon *passengerWagon = new PassengerWagon(5);
 	std::cout << *passengerWagon << std::endl;          //	[OOOOO]
@@ -43,7 +43,6 @@ int main() {
 		->addWagon(new PassengerWagon(5));
 	Train anotherTrain(&wagons2, gasolineLocomotive);
 	std::cout << anotherTrain << std::endl;                //	[###]-[OO]-[@]-[#]-[OOOOO]-[OOOOO]-[OOOOO]-[OOOOO]-[G]>
-	*/
 
 	return 0;
 }

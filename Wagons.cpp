@@ -11,11 +11,9 @@ namespace simasciitrain {
     }
 
     ostream &operator<<(ostream &os, const Wagons &wagons) {
-        for (auto it = wagons.wagons->begin(); it != wagons.wagons->end(); ++it) {
-            os << *it;
-            if (std::next(it) != wagons.wagons->end()) {
-                os << " - ";
-            }
+        for (int i = 0; i < wagons.wagons->size(); i++) {
+            os << *wagons.wagons->at(i) << ((i == wagons.wagons->size() - 1) ? "" : "-");
+
         }
         return os;
     }

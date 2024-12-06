@@ -7,8 +7,6 @@
 namespace simasciitrain {
     AbstractWagon::AbstractWagon(TypeWagon *type) : type(type) {}
 
-    AbstractWagon::~AbstractWagon() = default;
-
     string AbstractWagon::getName() const {
         return type->getName();
     }
